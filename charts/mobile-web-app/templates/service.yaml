@@ -10,8 +10,8 @@ spec:
   selector:
     app: iwayq-app
 
-  type: NodePort
+  type: {{ .Values.service.type }}
   ports:
-  - nodePort: 31000
-    port: 8080
-    targetPort: 8080
+  - nodePort: {{ .Values.service.nodePort }}
+    port: {{ .Values.service.port }}
+    targetPort: {{ .Values.service.targetPort }}

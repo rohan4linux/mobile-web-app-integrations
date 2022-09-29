@@ -46,15 +46,15 @@ pipeline {
                 rtMavenDeployer (
                     id: "MAVEN_DEPLOYER",
                     serverId: "jfrog",
-                    releaseRepo: "iwayqweb-libs-release-local",
-                    snapshotRepo: "iwayqweb-libs-snapshot-local"
+                    releaseRepo: "vivo-libs-release-local",
+                    snapshotRepo: "vivo-libs-snapshot-local"
                 )
 
                 rtMavenResolver (
                     id: "MAVEN_RESOLVER",
                     serverId: "jfrog",
-                    releaseRepo: "iwayqweb-libs-release",
-                    snapshotRepo: "iwayqweb-libs-snapshot"
+                    releaseRepo: "vivo-libs-release",
+                    snapshotRepo: "vivo-libs-snapshot"
                 )
             }
     }
